@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no">
+<title>Malta News Today</title>
+<!--[if mso]>
+<style type="text/css">
+  table { border-collapse:collapse; }
+  .news-card-table { width:100%; max-width:600px; }
+  .news-card-img { width:100% !important; height:auto !important; }
+  .news-card-title { font-size:22px !important; line-height:1.25 !important; color:#ffffff !important; font-family:Georgia,serif !important; font-weight:700 !important; }
+  .news-card-body { font-size:15px !important; line-height:1.5 !important; color:#c8c8c8 !important; font-family:Georgia,serif !important; }
+  .news-card-meta { font-size:12px !important; color:#8a8a8a !important; font-family:Georgia,serif !important; }
+  .news-card-source { font-size:13px !important; color:#FF5C3A !important; font-family:Georgia,serif !important; }
+</style>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<style>
+  body { background:#000000; color:#e8e8e8; font-family:Georgia,'Times New Roman',serif; margin:0; padding:32px 24px; -webkit-text-size-adjust:100%; }
+  .news-title { text-align:center; font-family:Georgia,'Times New Roman',serif; font-weight:700; font-size:56px; color:#FF5C3A; letter-spacing:4px; text-transform:uppercase; margin:8px 0 4px 0; }
+  .news-date { text-align:center; font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#8a8a8a; letter-spacing:1px; margin:0 0 28px 0; }
+  .news-grid { display:grid; grid-template-columns:repeat(5, 1fr); gap:24px; max-width:1400px; margin:0 auto; }
+  .news-card { border-bottom:1px solid #3a3a3a; padding-bottom:16px; background:#000000; color:#e8e8e8; font-family:Georgia,'Times New Roman',serif; }
+  .news-card.hero { grid-column:span 3; display:block; }
+  .news-card.side { grid-column:span 2; }
+  .news-card.feature { grid-column:span 1; }
+  .news-card img { width:100%; height:auto; display:block; border-radius:0; border:0; }
+  .news-card h2 { font-family:Georgia,'Times New Roman',serif; font-weight:700; font-size:26px; color:#ffffff; line-height:1.2; margin:12px 0 10px 0; }
+  .news-card.hero h2 { font-size:36px; }
+  .news-card.feature h2 { font-size:20px; }
+  .news-card p { font-family:Georgia,'Times New Roman',serif; font-size:16px; color:#c8c8c8; line-height:1.5; margin:0 0 12px 0; }
+  .news-card .meta { font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#8a8a8a; border-top:1px solid #2a2a2a; padding-top:8px; margin-top:12px; }
+  .news-card .sources { font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#8a8a8a; margin-top:8px; }
+  .news-card .sources a { color:#FF5C3A; text-decoration:none; border-bottom:1px dotted #FF5C3A; }
+  .news-card .sources a:hover { color:#ffffff; border-bottom-color:#ffffff; }
+
+  /* Mobile (browser + iOS Mail / Gmail mobile / Outlook iOS/Android): single column */
+  @media only screen and (max-width: 768px) {
+    body { padding:16px 12px !important; }
+    .news-title { font-size:36px !important; letter-spacing:3px !important; }
+    .news-date { font-size:12px !important; margin-bottom:18px !important; }
+    .news-grid { display:block !important; max-width:100% !important; }
+    .news-card { display:block !important; grid-column:span 1 !important; width:100% !important; margin:0 0 24px 0 !important; padding-bottom:18px !important; border-bottom:1px solid #3a3a3a !important; }
+    .news-card.hero,.news-card.side,.news-card.feature { grid-column:span 1 !important; }
+    .news-card img { width:100% !important; height:auto !important; display:block !important; margin:0 0 12px 0 !important; }
+    .news-card h2 { font-size:22px !important; line-height:1.25 !important; margin:8px 0 10px 0 !important; color:#ffffff !important; }
+    .news-card.hero h2,.news-card.side h2,.news-card.feature h2 { font-size:22px !important; }
+    .news-card p { font-size:15px !important; line-height:1.5 !important; color:#c8c8c8 !important; margin:0 0 10px 0 !important; }
+    .news-card .meta { font-size:12px !important; margin-top:10px !important; padding-top:8px !important; }
+    .news-card .sources { font-size:13px !important; }
+    .news-card .sources a { display:inline-block !important; padding:2px 0 !important; }
+  }
+  /* Narrow email clients */
+  @media only screen and (max-width: 480px) {
+    .news-title { font-size:30px !important; }
+    .news-card h2 { font-size:20px !important; }
+    .news-card p { font-size:14px !important; }
+  }
+</style>
+<link rel="alternate" type="application/rss+xml" title="Malta News Today" href="https://maltanews.pages.dev/feed.xml" />
+</head>
+<body style="background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;margin:0;padding:32px 24px;-webkit-text-size-adjust:100%;">
+<div class="news-title" style="text-align:center;font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:56px;color:#FF5C3A;letter-spacing:4px;text-transform:uppercase;margin:8px 0 4px 0;">NEWS</div>
+<div class="news-date" style="text-align:center;font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;letter-spacing:1px;margin:0 0 28px 0;">20 November 2026 · Morning Digest</div>
+
+<div class="intl-nav-strip" style="text-align:center;font-family:Georgia,'Times New Roman',serif;font-size:13px;letter-spacing:2px;margin:0 0 20px 0;"><a href="https://maltanews.pages.dev/" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;margin:0 10px;">MALTA NEWS</a><a href="https://maltanews.pages.dev/international.html" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;margin:0 10px;">INTERNATIONAL</a></div>
+<!--[if mso]>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#000000;">
+<tr><td align="center" style="padding:0 8px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="news-card-table" style="max-width:600px;">
+<tr><td>
+<![endif]-->
+
+<div class="news-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:24px;max-width:1400px;margin:0 auto;">
+<article class="news-card hero" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/8682a79a8518541df2e795b4f9e1e9e61fe11a16-1795102543-1ad8afe2-1200x630.jpg" alt="db Group covering charges for non-EU workers" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:36px;color:#ffffff;line-height:1.2;margin:12px 0 10px 0;">db Group to cover new €400 infrastructure and driving licence charges for non-EU workers</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">db Group has said it will cover the new €400 annual infrastructure contribution and €83 monthly driving licence charge introduced in Budget 2027 for its non-EU workers. The hotel, hospitality and real estate group behind the Hard Rock Hotel announced the move on LinkedIn as part of a “financial support package” in response to the budget measures. The measures have drawn criticism from unions and opposition parties, and further employer responses are expected.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 16:35 · Business</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://timesofmalta.com/article/db-group-cover-infrastructure-driving-licence-charges-noneu-workers.1137373" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Times of Malta</a><br />
+        <a class="news-card-source" href="https://newsbook.com.mt/il-grupp-db-se-jhallas-il-mizata-ta-e400-fis-sena-ghall-impjegati-tcns/" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Newsbook Malta</a><br />
+        <a class="news-card-source" href="https://lovinmalta.com/news/local/db-group-to-cover-e400-annual-charge-for-tcn-employees/" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Lovin Malta</a><br />
+        <a class="news-card-source" href="https://thebusinesspicture.com/2026/11/19/db-group-to-cover-new-infrastructure-driving-licence-charges-for-non-eu-workers/" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">The Business Picture</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card side" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/ed4de693260fe6c234dbe152e3219989db43c272-1795104350-78d56f9f-1200x630.jpg" alt="Finch trapping site in Malta" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:26px;color:#ffffff;line-height:1.2;margin:12px 0 10px 0;">European Commission tells Malta to stop finch trapping, rejects ‘research’ justification</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">The European Commission has sent Malta a reasoned opinion saying the country’s finch-trapping derogation “does not pursue a genuine research purpose” and that Malta is not complying with the EU Birds Directive. Malta has two months to respond before the dispute can be referred to the Court of Justice. The Commission called on Malta to “stop authorising finch trapping”, adding that enforcement and alternative solutions remain inadequate.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 17:04 · EU / Environment</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://timesofmalta.com/article/eu-tells-malta-stop-finch-trapping-rejects-research-justification.1137374" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Times of Malta</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/f0ca8fc321ea0c227033fdfedb56cd340d3af71e-1795108444-d72a6cf8-1200x630.jpg" alt="Medical Association of Malta statement" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">MAM suspends industrial action over trainee appointment delays</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">The Medical Association of Malta has suspended the industrial action due to start on Friday after “progress” on trainee appointments, saying basic specialist training and GP trainee applicants will begin training on Monday. The association insisted outstanding appointments must still be processed urgently and that the formal trade dispute remains open until lasting measures are agreed. It said the six-month recruitment delay, from the May call to a November 23 start date, exposed underlying problems in the system.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 18:13 · Health</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://timesofmalta.com/article/mam-suspends-industrial-action-progress-trainee-appointments.1137377" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Times of Malta</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/9d6574c2f15fe6c9bdce627935d4bd478b2e8d06-1795111459-099df4c0-1200x630.jpg" alt="Tobacco and smoking in Malta" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Family doctors urge tougher national conditions on tobacco smoking and vaping</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">The Malta College of Family Doctors and the Association of Private Family Doctors have urged the government to impose “tougher conditions” on smoking and vaping, noting Malta is the only EU member state holding out against the bloc’s Tobacco Taxation Directive. They said tobacco is behind a substantial share of cardiovascular, respiratory and cancer cases, which account for almost half of Malta’s annual mortality toll. Suggested measures include wider access to cessation medication and classes, more staff training in motivational interviewing, and more smoke-free areas.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 19:03 · Health</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://timesofmalta.com/article/malta-impose-tougher-conditions-tobacco-smoking-family-doctors-say.1137379" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Times of Malta</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/4273bcb241b1485c67e4eb28e1eee7e2f89e74b9-1795115186-4937cc0e-1200x630.jpeg" alt="Glenn Bedingfield at EU-MED forum" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Bedingfield calls for Mediterranean EU ministers to meet on defence and security</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">Home Affairs and Security Minister Glenn Bedingfield proposed that ministers from nine Mediterranean and Southern EU states meet to discuss defence and security, arguing peace and stability in Europe cannot be achieved without the same in the Mediterranean. He made the call at the first EU-MED Peace and Security Forum in Brussels, urging Europe to “act early rather than wait for problems to become crises”. He linked regional instability in Libya and Syria directly to Malta’s sea routes, energy supplies and economic security.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 20:05 · Government</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://timesofmalta.com/article/bedingfield-calls-mediterranean-eu-ministers-meet-defence-security.1137381" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Times of Malta</a><br />
+
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/0f69f5300e4cb39f0495c095dbe7416c09b8ccd4-1795117386-fbc57fa7-1200x630.jpg" alt="Children and school pressures" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Children need more free time as school pressures take toll, Commissioner’s report finds</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">The Commissioner for Children’s annual child participation report found academic pressure was the leading systemic source of stress for children, with bullying, competition over performance and worries about artificial intelligence also cited. It recommends that a minimum amount of daily free time be enshrined in the national curriculum to curb excessive workloads, and that mental health literacy and critical thinking be embedded in teaching. The Commissioner separately launched initiatives for World Children’s Day on 20 November, themed “My Day, My Rights, My Future”.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 20:42 · Education</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://timesofmalta.com/article/children-need-free-time-school-pressures-take-toll-report-finds.1137384" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Times of Malta</a><br />
+
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/3eff1a55ee3e.jpg" alt="Fuel smuggler court case" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Suspected fuel smuggler fighting extradition to Spain granted bail</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">Maltese businessman Rodrick Grech has been granted bail after being charged over his alleged involvement in a network suspected of laundering €153 million between 2021 and 2024. He was arrested at his company’s premises in Santa Venera after Spain issued a European Arrest Warrant, and he does not consent to being surrendered. Investigators allege the network used a Bulgarian-registered company and 14 other shell companies in Spain to source petroleum products while evading VAT.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 17:56 · Courts & Crime</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://www.maltatoday.com.mt/news/court_and_police/145825/suspected_fuel_smuggler_fights_extradition_to_spain_1" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">MaltaToday</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/Glenn-Bedingfield-14.jpg" alt="Glenn Bedingfield" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Safe city concept to be extended to Marsa, with Ħamrun, Sliema and Valletta to follow</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">Security Minister Glenn Bedingfield said the “safe city” concept is being extended to Marsa, following San Ġiljan, Is-Swieqi and Buġibba, with Ħamrun, Tas-Sliema and il-Belt to work on the plan in the coming days. He said the crime rate per 1,000 people fell from 46 in 2005 to 27 in 2025, while warning that cybercrime is rising as burglaries fall. More CCTV cameras are being added in problem areas, and resident associations were praised for helping police spot suspicious activity.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 18:21 · Home Affairs</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://newsbook.com.mt/pjan-biex-il-hamrun-tas-sliema-u-l-belt-isiru-safe-cities-il-ministru/" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Newsbook Malta</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/5e31b1c26cfa.jpg" alt="Speaker Carmelo Abela on a school visit" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Speaker Carmelo Abela begins school visits to bring Parliament closer to youths</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">Speaker of the House Carmelo Abela has started a series of visits to schools, beginning at St Albert the Great College in Valletta where he met students and discussed the work of Parliament. The initiative, prompted by the college rector, is aimed at bringing Parliament closer to the public and particularly to children and young people. He also met primary and secondary pupils who had prepared questions about the role of the Speaker and Parliament.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 17:46 · Parliament</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://www.independent.com.mt/articles/2026-11-19/local-news/Speaker-Carmelo-Abela-begins-school-visits-to-bring-Parliament-closer-to-youths-6736294797" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">Malta Independent</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-19" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/Stock-Exchange-Borza-ta-Malta-Zigli-3-e1787644623864.jpeg" alt="Malta Stock Exchange" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">Mixed movements across 13 Malta equities as index stays flat</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">The Malta Stock Exchange equity index was practically unchanged at 4,312.8 points, with gains in HSBC, PG, APS, Bank of Valletta and Computime offsetting declines in BMIT Technologies, International Hotel Investments and Malita Investments. Total trading value in local equities was €0.22 million, and APS Bank closed at its highest level since February 2025. The RF MGS bond index slipped 0.12% as euro-area inflation accelerated to 4.0% in October.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">19 November 2026, 18:22 · Markets</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://thebusinesspicture.com/2026/11/19/mixed-movements-across-13-equities/" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">The Business Picture</a>
+      </div>
+    </div>
+  </article>
+<article class="news-card feature" data-date-published="2026-11-20" style="border-bottom:1px solid #3a3a3a;padding-bottom:16px;background:#000000;color:#e8e8e8;font-family:Georgia,'Times New Roman',serif;">
+    <img class="news-card-img" src="/maltannews/img/4_photo_3.jpg" alt="Loading bays in Birgu" style="width:100%;height:auto;display:block;border-radius:0;border:0;" />
+    <div>
+      <h2 class="news-card-title" style="font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:20px;color:#ffffff;line-height:1.2;margin:10px 0 8px 0;">New loading bays in Birgu raise residents’ questions over authorisation</h2>
+      <p class="news-card-body" style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#c8c8c8;line-height:1.5;margin:0 0 12px 0;">Residents in Birgu have raised concerns over three on-street parking bays in Triq Sant Anton that became unloading bays overnight, saying the designation appears to lack Transport Malta authorisation and may be reserved for particular individuals or businesses. Birgu mayor John Boxall said the bays were discussed and approved at council level to help the commercial community, and confirmed CCTV cameras were installed at LESA’s request. Residents also complain that LESA fines have been issued for brief use of the bays while loading belongings.</p>
+      <div class="meta news-card-meta" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;border-top:1px solid #2a2a2a;padding-top:8px;margin-top:12px;">20 November 2026, 05:59 · Local Government</div>
+      <div class="sources news-card-sources" style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#8a8a8a;margin-top:8px;">
+        <a class="news-card-source" href="https://www.maltatoday.com.mt/news/national/145729/new_loading_bays_irk_birgu_residents" target="_blank" rel="noopener noreferrer" style="color:#FF5C3A;text-decoration:none;border-bottom:1px dotted #FF5C3A;">MaltaToday</a>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!--[if mso]>
+</td></tr>
+</table>
+</td></tr>
+</table>
+<![endif]-->
+</body>
+</html>
